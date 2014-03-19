@@ -19,6 +19,7 @@ cd "$BUILD_DIR"
 mkdir -p "$CACHE_DIR/package"
 
 echo ">-----> INSTALLING MONGO via GEM"
+sudo chmod -R g+w /usr/local/lib/ruby/gems/
 gem install mongo
 
 function fetch_engine_package() {
